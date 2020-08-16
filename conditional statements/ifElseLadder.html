@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>If</title>
+	<script>
+	
+	var jsGrade = parseInt(prompt("Please enter js grade"));
+	var javaGrade = parseInt(prompt("Please enter java grade"));
+	var dotnetGrade = parseInt(prompt("Please enter .Net grade"));
+	
+	var total = jsGrade + javaGrade + dotnetGrade;
+	document.write("Total Grade: " + total + "<br/>");
+	var average = total/3;
+	document.write("Average: " + average+ "<br/>");
+	
+	if(jsGrade >= 35 && javaGrade >= 35 && dotnetGrade >=35)
+	{
+		document.write("Result: Passed" + "<br/>");
+		if(average >= 35 && average < 60)
+		{
+			document.write("Grade: C" + "<br/>");
+		}
+		else if(grade >= 60 && average <70)
+		{
+			document.write("Grade: B" + "<br/>");
+			}
+			else{
+			document.write("Grade: A" + "<br/>");}
+	}
+	else{
+	document.write("Result: Failed" + "<br/>");}
+	
+	</script>
+ </head>
+ 
+
+	
+</html>
