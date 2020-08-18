@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<title>Do while Loop</title>
+	<script>
+	
+	var i = 3;
+	var n = 2;
+	
+	do {
+	
+		document.write("VAlue of i: " + i);
+	
+	}while(i<=n);
+	
+	</script>
+ </head>
+ 
+
+	
+</html> 
