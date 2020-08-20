@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Throw</title>
+<script> 
+    function validateAge(){
+        try{
+            var age = document.getElementById("age").value;
+            if(age == "")
+            {
+                throw "Age cannot be empty!";
+            }
+            if(age < 18)
+            {
+                throw "Too young to vote"
+            }
+        }
+        catch(obj)
+        {
+            document.getElementById("errorinfo").innerHTML = obj;
+        }
+        finally{
+            document.getElementById("finallyinfo").innerHTML = "inside finally block";
+        }
+    }
+    
+
+</script>
+</head>
+
+<body> 
+    Age : <input type="text" id="age"/>
+    <input type="button" onclick="validateAge()" value="validate"/>
+    <p id="errorinfo"/>
+    <p id="finallyinfo"/>
+
+</body>
+
+
+</html>
