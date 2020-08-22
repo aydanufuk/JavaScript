@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation: Radiobuttons</title>
+        <script> 
+        function validate(){
+
+            var valid = false;
+            var inf = document.myform.paymentmethod;
+
+            for(var i = 0; i<inf.length;i++){
+                if(inf[i].checked){
+                    valid = true;
+                    break;
+                }
+            }
+            if(valid){
+                alert("validation successfull");
+            }
+            else{
+                alert("please select a mode of payment");
+                return false;
+            }
+        }
+        </script>
+       
+    </head>
+
+    <body>
+        <h3>Select a mode of payment: </h3>
+        <form name="myform" action="radio.php" onsubmit="return validate()">
+            <input type="radio" name="paymentmethod" value="cod"> Cash on Delivery
+            <input type="radio" name="paymentmethod" value="creditcard">credit Card
+            <input type="radio" name="paymentmethod" value="debitcard">debit card
+
+        <input type="submit" value="submit"/>
+        
+        
+        </form>
+    </body>
+</html>
