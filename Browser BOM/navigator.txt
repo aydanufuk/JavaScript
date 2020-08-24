@@ -1,0 +1,13 @@
+<html>
+
+<head>
+    <title>navigator</title>
+    <script>
+      document.write("App Name: " + navigator.appName + <br/>);
+     </script>
+</head>
+<body>
+   
+</body>    
+</html>
+
