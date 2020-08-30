@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>
+            cleaning up (deallocate the memory)
+        </title>
+
+        <script>
+
+           var obj1 = new Object();
+           var obj2 = obj1;
+
+            obj1.myProperty = "all the power is with in you";
+
+            document.write(obj2.myProperty + "<br/>");
+
+            obj1 = null;
+            obj2 = null;
+
+            
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
